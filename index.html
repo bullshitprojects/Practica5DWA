@@ -5,75 +5,72 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Practica 5</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body class="bg-warning">
     <div class="container" style="margin-top: 50px;">
-        <div class="row justify-content-center">
-            <div class="col-10 shadow">
-                <div class="row">
-                    <h4 style="padding-top: 10px; margin-left: 15px;">Formulario de Registro</h4>
+        <div class="row justify-content-center" style="margin: 0px 10px 0px 10px;">
+            <div class="col-xl-8 col-lg-8 col-md-12 shadow-lg bg-light">
+                <div class="row justify-content-center bg-dark">
+                    <div class="col-sm-9">
+                        <h2 class="text-white" style="padding: 15px 0px 15px 0px;">Formulario de Registro</h2>
+                    </div>                   
                 </div>
                 <div class="row justify-content-center">
-                    <form action="registro.php" method="post" style="margin: 30px 10px 10px 10px;">
-                        <div class="form-group row"><label
-                                class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4" for="name"
-                                style="font-weight: bold;">Nombre</label>
-                            <div class="col-sm-8"><input class="form-control" type="text" id="name"
-                                    placeholder="Escribe tu nombre" aria-describedby="namehelp" required=""><small
-                                    id="namehelp" class="form-text text-muted">Debes escribir tu nombre completo</small>
+                    <form action="registro.php" method="post" style="margin: 40px 10px 10px 10px;">
+                        <div class="form-group row">
+                            <label class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4 font-weight-bold" for="name" >Nombre</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="name" placeholder="Escribe tu nombre" aria-describedby="namehelp" required>
+                                <small id="namehelp" class="form-text text-muted">Debes escribir tu nombre completo</small>
                             </div>
                         </div>
-                        <div class="form-group row"><label
-                                class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4" for="user"
-                                style="font-weight: bold;">Usuario</label>
-                            <div class="col-sm-8"><input class="form-control" type="text" id="user"
-                                    placeholder="Elija su nombre de usuario" aria-describedby="userhelp"
-                                    required=""><small id="userhelp" class="form-text text-muted">Ingrese un usuario
-                                    (sin espacios) para el logueo</small></div>
+                        <div class="form-group row">
+                            <label class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4 font-weight-bold" for="user" >Usuario</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="user" placeholder="Elija su nombre de usuario" aria-describedby="userhelp" required>
+                                <small id="userhelp" class="form-text text-muted">Ingrese un usuario (sin espacios) para el logueo</small>
+                            </div>
                         </div>
-                        <div class="form-group row"><label
-                                class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4" for="pass"
-                                style="font-weight: bold;">Password</label>
-                            <div class="col-sm-8"><input class="form-control" type="password" id="pass"
-                                    placeholder="Ingrese una contraseña" aria-describedby="passhelp" required=""
-                                    minlength="8"
-                                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&amp;*_=+-]).{8,32}$"><small
-                                    id="passhelp" class="form-text text-muted">Contraseña mínimo 8 caracteres, incluir
-                                    números y mayúsculas</small></div>
+                        <div class="form-group row">
+                            <label class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4 font-weight-bold" for="pass" >Password</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="password" id="pass" placeholder="Ingrese una contraseña" aria-describedby="passhelp" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&amp;*_=+-]).{8,32}$">
+                                <small id="passhelp" class="form-text text-muted">Contraseña mínimo 8 caracteres, incluir números y mayúsculas</small>
+                            </div>
                         </div>
-                        <div class="form-group row"><label
-                                class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4" for="gender"
-                                style="font-weight: bold;">Sexo</label>
-                            <div class="col-sm-8"><select class="form-control" required="">
+                        <div class="form-group row">
+                            <label class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4 font-weight-bold" for="gender" >Sexo</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" required>
                                     <option value="m" selected="">Masculino</option>
                                     <option value="f">Femenino</option>
                                     <option value="na">Otro</option>
-                                </select></div>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group row"><label
-                                class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4" for="address"
-                                style="font-weight: bold;">Dirección</label>
-                            <div class="col-sm-8"><input class="form-control" type="text" id="address"
-                                    placeholder="Escribe tu dirección completa"></div>
+                        <div class="form-group row"><label class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4 font-weight-bold" for="address" >Dirección</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="address" placeholder="Escribe tu dirección completa">
+                            </div>
                         </div>
-                        <div class="form-group row"><label
-                                class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4" for="phone"
-                                style="font-weight: bold;">Teléfono</label>
-                            <div class="col-sm-8"><input class="form-control" type="text" id="phone"
-                                    placeholder="77777777"></div>
+                        <div class="form-group row">
+                            <label class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4 font-weight-bold" for="phone" >Teléfono</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" id="phone" maxlength="8" placeholder="77777777">
+                            </div>
                         </div>
-                        <div class="form-group row"><label
-                                class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4" for="bio"
-                                style="font-weight: bold;">Bio</label>
-                            <div class="col-sm-8"><textarea class="form-control" id="bio"
-                                    placeholder="Descríbete a tí mismo en unas líneas" rows="4"></textarea></div>
+                        <div class="form-group row">
+                            <label class="text-sm-left text-lg-right text-xl-right col-form-label col-sm-4 font-weight-bold" for="bio">Bio</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" id="bio" maxlength="120" placeholder="Descríbete a tí mismo en unas líneas" rows="4"></textarea>
+                            </div>
                         </div>
-                        <div class="text-center"><button class="btn btn-primary bg-success border-success" id="btnReg"
-                                type="submit" style="margin-bottom: 30px;">Registrar</button></div>
+                        <div class="text-center">
+                            <button class="btn btn-primary bg-danger border-danger" id="btnReg" type="submit" style="margin: 30px 0px 30px 0px;">Registrar</button>
+                        </div>
                     </form>
                 </div>
             </div>
